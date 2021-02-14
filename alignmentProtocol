@@ -9,11 +9,11 @@
 Command: :%s/ E / A /
 Note: Include spaces to ensure that not all of the Es are replaced with As. Change the chain name in only the one you are trying to move.
 a. Determine the range when the line up starts. (with bottom molecule)
-Top - 6vxx Bottom - 7bwj: 333 
-Top - 6xm5 Bottom - 7bwj: 333 
-Top - 6vyb Bottom - 7bwj: 333
-Top - 6x2b Bottom - 7bwj: 333 
-Top - 7cak Bottom - 7bwj: 333
+Top - 6vxx Bottom - 7bwj: 334 
+Top - 6xm5 Bottom - 7bwj: 334 
+Top - 6vyb Bottom - 7bwj: 334
+Top - 6x2b Bottom - 7bwj: 334 
+Top - 7cak Bottom - 7bwj: 334
 b. Determine the end value. (Last residue that you want to align) 
 Bottom - 7bwj: 526 
 
