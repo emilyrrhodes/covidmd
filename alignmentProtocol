@@ -34,10 +34,11 @@ Top - 6xm5 Bottom - 7bwj: chain A and name CA and resid 333 to 444 447 to 526
 Top - 6vyb Bottom - 7bwj: chain A and name CA and resid 333 to 442 448 to 470 490 to 501 503 to 526
 Top - 6x2b Bottom - 7bwj: chain A and name CA and resid 333 to 442 448 to 470 490 to 501 503 to 526
 Top - 7cak Bottom - 7bwj: chain A and name CA and resid 333 to 444 447 to 526 
+antibody: chain A and name CA and resid 333 to 445 448 to 526
 
 6. Save aligned molecule.
 a. Select the top molecule. 
-Command: set sel [atomselect 0 "all"]
+Command: set sel [atomselect 0 "chain A"]
 b. Select the bottom aligned molecule. 
 Command: set sel2 [atomselect 1 "chain H L"]
 c. Combine the two molecules. 
