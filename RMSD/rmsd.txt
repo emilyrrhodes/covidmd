@@ -1,0 +1,20 @@
+1. Make index file.
+Command: echo 'q' | gmx_mpi make_ndx -f *.gro
+
+2. Add a group to the index file with the residues you want to look at.
+Command: edit the *.ndx file
+Example:
+[ Mutation Site ]
+   482
+
+[ Loop ]
+   486    487    488    489    490
+
+3. Make the trajectories whole.
+Command: gmx_mpi trjconv -f *.xtc -pbc whole -o *_new.xtc -s *.tpr
+
+4. Make the trajectories not jump.
+Command: gmx_mpi trjconv -f *_new.xtc -pbc nojump -o *_whole.xtc -s *.tpr
+
+5. Calculate the rmsd.
+Command: gmx_mpi rms -s *.gro -f *_whole.xtc -n *.ndx
